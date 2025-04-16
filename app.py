@@ -40,5 +40,5 @@ if input_text:
     st.session_state.history.append({'input': input_text, 'answer': answer})
 
 for chat in st.session_state.history:
-    st.markdown(f"**:orange[You : ]** {chat['input']}")
-    st.markdown(f"**:green[Gemini : ]** {chat['answer']}")
+    st.markdown(f"**:orange[You : ]**  \n{chat['input']}")
+    st.markdown(f"**:green[Gemini : ]**  \n{chat['answer']}")
