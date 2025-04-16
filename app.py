@@ -27,6 +27,9 @@ def get_gemini_response(question):
     return response.text
 
 # Intitiate the Streamlit application
+
+st.set_page_config(page_title='Chatbot', layout='centered')
+
 st.subheader('Chatbot with Gemini')
 
 if 'history' not in st.session_state:
